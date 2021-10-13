@@ -1,4 +1,15 @@
 <!DOCTYPE HTML>
+<html>
+
+<!-- HEADER -->
+<head>
+
+<meta charset="UTF-8">
+
+<title>Write your game's title here</title>
+
+<script type="text/bitsyGameData" id="exportedGameData">
+Write your game's title here
 
 # BITSY VERSION 7.10
 

@@ -47,6 +47,7 @@ ITM 0 7,7
 ITM 0 11,6
 ITM 0 12,6
 ITM 0 9,6
+ITM 0 5,10
 EXT 12,10 1 5,10
 PAL 0
 
@@ -474,8 +475,8 @@ a,a,a,a,a,a,0,a,a,a,a,a,a,a,a,a
 0,a,a,0,a,a,0,a,0,a,a,0,a,0,a,0
 0,0,a,0,a,a,0,a,0,0,a,0,a,0,a,0
 a,0,a,0,a,a,0,a,0,a,a,0,a,0,a,0
-a,0,a,0,a,a,0,0,a,a,a,a,a,0,a,0
-a,0,a,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,0,a,0,a,a,0,0,0,a,a,a,a,0,a,0
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME room 5
 EXT 6,0 k 6,0
 EXT 1,15 l 2,0
@@ -748,7 +749,7 @@ SPR A
 00011000
 00100100
 00100100
-POS j 1,15
+POS 0 5,10
 
 SPR a
 00000000
@@ -938,6 +939,17 @@ ITM 7
 NAME room 5 door
 DLG 9
 
+ITM 8
+00000000
+00111100
+00100100
+00111100
+00010000
+00011000
+00010000
+00011000
+NAME red key
+
 DLG 0
 """
 {sequence
@@ -954,7 +966,7 @@ It's dark...
 NAME tea dialog
 
 DLG 2
-A key! {wvy}What does it open?{wvy}
+
 NAME key dialog
 
 DLG 3
@@ -1004,7 +1016,7 @@ DLG a
 """
 {
   - hasTalkedToCat >= 2 ?
-    Thank you for finding my cat! Here is a red key {printItem "1"} . I'm sure it will unlock something.
+    Thank you for finding my cat! Here is a red key {printItem "8"} . I'm sure it will unlock something. {item "8" {1}}
   - else ?
     Hello, youngin. Could you please help an old man out? It seems my cat has run {wvy}away{wvy}... I've lost my cane and can't walk without it but that is not what is important. Can you please help me find my cat?
     
@@ -10064,6 +10076,7 @@ CHAR 255
 010010
 000000
 000000
+</script>
 </script>
 
 </head>

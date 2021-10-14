@@ -47,6 +47,7 @@ ITM 0 7,7
 ITM 0 11,6
 ITM 0 12,6
 ITM 0 9,6
+ITM 0 5,10
 EXT 12,10 1 5,10
 PAL 0
 
@@ -110,6 +111,7 @@ f,c,f,b,b,b,b,b,j,f,j,f,c,f,j,f
 f,c,f,f,f,f,f,f,f,f,j,f,c,f,j,f
 f,b,b,b,b,b,b,b,b,b,j,f,b,b,j,f
 ITM 4 6,9
+EXT 14,0 4 0,2
 PAL 0
 
 ROOM 4
@@ -238,6 +240,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-1-2-3
+EXT 11,8 l 7,15
 PAL 0
 
 ROOM 9
@@ -260,6 +263,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 NAME 4-1-2-4
 ITM 5 2,0
 ITM 5 8,8
+EXT 8,8 l 7,15
 PAL 0
 
 ROOM a
@@ -303,6 +307,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-2-3-4
+EXT 1,0 l 7,15
 PAL 0
 
 ROOM c
@@ -345,6 +350,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-2-4-3
+EXT 1,0 l 7,15
 PAL 0
 
 ROOM e
@@ -389,6 +395,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-1-4-2
 ITM 5 8,8
+EXT 8,8 l 7,15
 PAL 0
 
 ROOM g
@@ -410,6 +417,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-1-2-4
 ITM 5 8,8
+EXT 8,8 l 7,15
 PAL 0
 
 ROOM h
@@ -431,6 +439,7 @@ a,a,a,a,0,0,0,0,a,0,a,0,a,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME 4-2-3-1
 ITM 5 11,8
+EXT 11,8 l 7,15
 PAL 0
 
 ROOM i
@@ -456,7 +465,6 @@ ITM 5 4,7
 ITM 5 8,8
 EXT 1,0 e 1,0
 EXT 4,7 c 4,7
-EXT 11,8 l 7,15
 PAL 0
 
 ROOM j
@@ -521,7 +529,6 @@ a,0,0,0,0,0,a,0,0,a,0,0,0,0,0,a
 a,0,0,0,0,0,a,0,0,a,0,0,0,0,0,a
 NAME between heart room and maze
 ITM 7 0,0
-EXT 7,15 i 11,8
 EXT 2,0 j 1,15
 PAL 0
 
@@ -748,7 +755,7 @@ SPR A
 00011000
 00100100
 00100100
-POS j 1,15
+POS 0 5,10
 
 SPR a
 00000000
@@ -938,6 +945,17 @@ ITM 7
 NAME room 5 door
 DLG 9
 
+ITM 8
+00000000
+00111100
+00100100
+00111100
+00010000
+00011000
+00010000
+00011000
+NAME red key
+
 DLG 0
 """
 {sequence
@@ -954,7 +972,7 @@ It's dark...
 NAME tea dialog
 
 DLG 2
-A key! {wvy}What does it open?{wvy}
+
 NAME key dialog
 
 DLG 3
@@ -1004,7 +1022,7 @@ DLG a
 """
 {
   - hasTalkedToCat >= 2 ?
-    Thank you for finding my cat! Here is a red key {printItem "1"} . I'm sure it will unlock something.
+    Thank you for finding my cat! Here is a red key {printItem "8"} . I'm sure it will unlock something. {item "8" {1}}
   - else ?
     Hello, youngin. Could you please help an old man out? It seems my cat has run {wvy}away{wvy}... I've lost my cane and can't walk without it but that is not what is important. Can you please help me find my cat?
     
@@ -10070,9 +10088,6 @@ CHAR 255
 
 
 <!-- DOCUMENT BODY -->
-<audio loop=”loop” autoplay=”autoplay”>
-<source src=“music.mp3”>
-</audio>
 <body onload='startExportedGame()'>
 	<!-- GAME CANVAS -->
 	<canvas id='game'></canvas>

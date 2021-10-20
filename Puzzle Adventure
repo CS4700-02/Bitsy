@@ -1760,6 +1760,27 @@ NAME Blue/Green Door
 DLG 1b
 POS k 0,10
 
+SPR 14
+00000000
+00011000
+00011000
+00100100
+01011010
+00011000
+00100100
+00100100
+>
+00000000
+00011000
+00011010
+00100100
+01011000
+00011000
+00100100
+00100100
+NAME Optician
+POS 1r 9,4
+
 SPR A
 00000000
 00011000
@@ -2553,7 +2574,7 @@ DLG 1b
   - greenKey == 1 ?
     {
       - blueKey == 1 ?
-        Perfect these two fit!{exit "1r" 6 6}
+        Perfect these two fit!{exit "1r" 15 10}
       - else ?
         Well one of the keys I have fits... I guess I need to find the other one.
     }

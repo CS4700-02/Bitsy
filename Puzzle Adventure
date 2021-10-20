@@ -376,7 +376,7 @@ ROOM j
 13,0,13,0,0,13,0,0,0,0,0,0,0,0,0,0
 13,s,13,0,0,12,10,10,10,10,11,0,0,0,0,0
 NAME room 5
-EXT 6,0 k 8,0
+EXT 6,0 k 8,15
 EXT 1,14 l 2,0 DLG 17
 PAL 0
 
@@ -391,16 +391,16 @@ ROOM k
 1l,1l,1l,1l,1l,1l,1l,13,0,0,0,0,0,0,0,s
 1l,1l,1l,1l,1l,1l,1l,13,0,14,10,10,10,10,10,10
 10,10,10,10,10,10,10,17,0,13,0,0,0,0,0,0
-s,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0
 10,10,10,10,10,10,10,16,0,13,0,0,0,0,0,0
 0,0,0,0,0,0,0,13,0,13,0,0,0,0,0,0
 0,0,0,0,0,0,0,13,0,13,0,0,0,0,0,0
 0,0,0,0,0,0,0,13,0,13,0,0,0,0,0,0
 0,0,0,0,0,0,0,13,0,13,0,0,0,0,0,0
 NAME room 6
-EXT 8,0 j 6,0
+EXT 8,15 j 6,0
 EXT 14,7 n 0,14
-EXT 8,14 1q 13,13 DLG 1a
+EXT 8,0 1q 13,13 DLG 1a
 PAL 0
 
 ROOM l
@@ -1071,7 +1071,7 @@ ROOM 1p
 13,0,13,0,0,13,0,0,0,0,0,0,0,0,0,0
 13,0,13,0,0,12,10,10,10,10,11,0,0,0,0,0
 NAME Room after cat mission
-EXT 6,0 k 8,0
+EXT 6,0 k 8,15
 PAL 0
 
 ROOM 1q
@@ -1092,7 +1092,27 @@ ROOM 1q
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Red Room
-EXT 13,13 k 8,14
+EXT 13,13 k 8,0
+PAL 0
+
+ROOM 1r
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Blue Green Room
 PAL 0
 
 TIL 10
@@ -1706,6 +1726,19 @@ SPR 12
 00000000
 00000000
 
+SPR 13
+01111110
+01000010
+01000010
+01000110
+01000010
+01000010
+01000010
+01111110
+NAME Blue/Green Door
+DLG 1b
+POS k 0,10
+
 SPR A
 00000000
 00011000
@@ -1724,7 +1757,7 @@ SPR A
 00011000
 00100000
 00100100
-POS n 1,14
+POS 0 5,10
 
 SPR a
 00000000
@@ -1746,7 +1779,7 @@ SPR a
 00100100
 NAME cat
 DLG 0
-POS 1p 13,13
+POS j 13,13
 
 SPR c
 01101100
@@ -2383,7 +2416,7 @@ DLG f
   - doorUnlocked == 1 ?
     The door swings open easily.{exit "s" 10 7}
   - else ?
-    It's Locked, I wonder what's in there?
+    It's locked, there's gotta be a way in somewhere around here.
 }
 """
 NAME Door - Locked 1 dialog
@@ -2452,7 +2485,7 @@ DLG u
 NAME Open Green Chest
 
 DLG v
-You press the button into the wall and hear a soft click.{doorUnlocked = 1}{exit "q" 11 14}
+You press the button into the wall and hear a soft click. I wonder what that unlocked.{doorUnlocked = 1}{exit "q" 11 14}
 NAME Button Left Press
 
 DLG w
@@ -2492,6 +2525,22 @@ DLG 1a
 }
 """
 NAME locked exit 5
+
+DLG 1b
+"""
+{
+  - greenKey == 1 ?
+    {
+      - blueKey == 1 ?
+        Perfect these two fit!{exit "1r" 6 6}
+      - else ?
+        Well one of the keys I have fits... I guess I need to find the other one.
+    }
+  - else ?
+    This door has two key holes, better start looking.
+}
+"""
+NAME Blue/Green Door locked dialog
 
 VAR hasTalkedToCat
 0

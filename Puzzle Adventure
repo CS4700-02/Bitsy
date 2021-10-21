@@ -54,15 +54,6 @@ ROOM 0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Beginning
-ITM 0 8,5
-ITM 0 9,5
-ITM 0 6,10
-ITM 0 6,6
-ITM 0 7,7
-ITM 0 11,6
-ITM 0 12,6
-ITM 0 9,6
-ITM 0 5,10
 EXT 11,10 1 6,10
 PAL 5
 
@@ -383,11 +374,11 @@ ROOM j
 13,s,13,0,0,12,10,10,10,10,11,0,0,0,0,0
 NAME room 5
 EXT 6,0 k 8,15
-EXT 1,14 l 2,0 DLG 17
+EXT 1,14 l 2,1 DLG 17
 PAL 5
 
 ROOM k
-1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,s,13,1n,1n,1n,1n,1n,1n
 1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
 1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
 1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
@@ -406,11 +397,12 @@ ROOM k
 NAME room 6
 EXT 8,15 j 6,0
 EXT 14,7 n 0,14
-EXT 8,0 1q 8,14 DLG 1a
+EXT 8,1 1q 8,14 DLG 1a
+EXT 8,1 k 8,15
 PAL 5
 
 ROOM l
-14,10,1i,10,10,10,10,10,10,10,1d,10,10,10,10,16
+14,10,0,10,10,10,10,10,10,10,1d,10,10,10,10,16
 13,0,0,0,0,0,0,0,0,0,13,0,0,0,0,13
 13,0,0,0,0,0,0,0,0,0,13,0,0,0,0,13
 13,0,0,0,0,0,0,0,0,0,13,0,0,0,0,13
@@ -428,7 +420,6 @@ ROOM l
 13,0,0,0,0,0,13,0,0,13,0,0,0,0,0,13
 NAME between heart room and maze
 ITM 7 0,0
-EXT 2,0 j 1,14 DLG 14
 PAL 5
 
 ROOM m
@@ -1097,7 +1088,7 @@ ROOM 1q
 1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
 0,1d,1d,1d,1d,1d,1d,1d,s,1d,1d,1d,1d,1d,1d,0
 NAME Red Room
-EXT 8,14 k 8,0
+EXT 8,14 k 8,1
 PAL 5
 
 ROOM 1r
@@ -1112,8 +1103,8 @@ ROOM 1r
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
-1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
-1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
+1q,1q,1q,1q,1q,1q,0,1q,1q,1q,1q,1q,1q,1q,1q,1q
+1q,1q,1q,1q,1q,1q,0,1q,1q,1q,1q,1q,1q,1q,1q,1q
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
 1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q,1q
@@ -1923,7 +1914,7 @@ SPR A
 00011000
 00100000
 00100100
-POS 1q 7,7
+POS j 1,12
 
 SPR a
 00000000
@@ -2333,6 +2324,19 @@ SPR 1e
 01111100
 01111100
 POS 1r 2,3
+
+SPR 1f
+01111110
+01000010
+01000010
+01000110
+01000010
+01000010
+01000010
+01111110
+NAME Cat Door
+DLG 1l
+POS l 2,0
 
 ITM 0
 00000000
@@ -2861,6 +2865,21 @@ You say that someone gave you a red key but the color looked the same as everyth
 Okay. Here are some glasses that should help with that. Take these glasses and go out the door that has three locks. Don't put them on until you go through that door, okay? Oh, wait. I almost forgot. You're going to need this key. Here is a blue key.{printItem "9"} I know you can't tell yet but you'll see what I mean when you put on the glasses. I have no use for this key since it doesn't open the door to my room...{item "0" {1}}{item "9" 1}
 """
 NAME doctor T dialog
+
+DLG 1l
+"""
+{
+  - hasTalkedToOldMan >= 1 ?
+    {exit "1p" 1 15}
+  - else ?
+    {exit "j" 1 13}
+}
+"""
+NAME Cat Door dialog
+
+DLG 1m
+You walk through the doorway
+NAME exit narration 5
 
 VAR hasTalkedToCat
 0

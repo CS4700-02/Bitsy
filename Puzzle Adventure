@@ -1114,6 +1114,144 @@ ROOM 1r
 NAME Blue Green Room
 PAL 0
 
+ROOM FIXED0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,14,10,10,10,10,10,10,10,16,0,0,0
+0,0,0,0,13,10,0,b,b,b,b,b,13,0,0,0
+0,0,0,0,12,10,10,10,10,10,10,10,17,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME Beginning
+ITM FIXED0 8,5
+ITM FIXED0 9,5
+ITM FIXED0 6,10
+ITM FIXED0 6,6
+ITM FIXED0 7,7
+ITM FIXED0 11,6
+ITM FIXED0 12,6
+ITM FIXED0 9,6
+ITM FIXED0 5,10
+EXT 11,10 1 6,10
+PAL 0
+
+ROOM FIXEDk
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,12,10,10,10,10,10,10
+1n,1n,1n,1n,1n,1n,1n,13,0,0,0,0,0,0,0,s
+1n,1n,1n,1n,1n,1n,1n,13,0,14,10,10,10,10,10,10
+10,10,10,10,10,10,10,17,0,13,1n,1n,1n,1n,1n,1n
+0,0,0,0,0,0,0,0,0,13,1n,1n,1n,1n,1n,1n
+10,10,10,10,10,10,10,16,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n
+NAME room 6
+EXT 8,15 j 6,0
+EXT 14,7 FIXEDn 0,14
+EXT 8,0 FIXED1q 8,14 DLG 1a
+PAL 0
+
+ROOM FIXEDn
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n,1n
+10,10,10,10,10,10,11,0,0,13,1n,1n,1n,1n,1n,1n
+0,0,0,0,0,0,0,l,0,13,1n,1n,1n,1n,1n,1n
+10,10,10,10,10,10,10,10,10,17,1n,1n,1n,1n,1n,1n
+NAME Dark Room entrance
+EXT 6,14 FIXEDo 6,14
+EXT 0,14 FIXEDk 14,7
+PAL 0
+
+ROOM FIXEDo
+1n,1n,1n,1n,1n,1n,14,10,10,15,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,0,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,1a,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,19,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,0,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1a,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,19,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,0,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,1a,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,19,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,0,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,1a,0,0,13,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,1n,13,0,0,19,1n,1n,1n,1n,1n,1n
+10,10,10,10,10,10,17,0,0,0,1n,1n,1n,1n,1n,1n
+0,0,0,0,0,l,0,0,0,1a,1n,1n,1n,1n,1n,1n
+10,10,10,10,10,10,10,10,10,17,1n,1n,1n,1n,1n,1n
+NAME Dark Room Hallway
+EXT 6,14 FIXEDn 6,14
+PAL 0
+
+ROOM FIXED1p
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+1n,1n,1n,1n,1n,13,0,13,1n,1n,1n,1n,1n,1n,1n,1n
+14,10,10,10,10,17,0,12,10,10,10,10,16,1n,1n,1n
+13,0,0,0,0,0,0,0,0,0,0,0,13,1n,1n,1n
+13,0,14,10,10,10,10,10,10,10,16,0,13,1n,1n,1n
+13,0,13,0,0,0,0,0,0,0,13,0,13,1n,1n,1n
+13,0,13,0,0,0,0,0,0,0,13,0,12,10,10,10
+13,0,12,10,10,10,10,16,0,0,13,0,0,0,0,0
+13,0,0,0,0,0,0,13,0,0,13,0,0,0,0,0
+13,0,14,10,10,16,0,12,10,10,17,0,0,0,0,0
+13,0,13,0,0,13,0,0,0,0,0,0,0,0,0,0
+13,0,13,0,0,12,10,10,10,10,11,0,0,0,0,0
+NAME Room after cat mission
+EXT 6,0 FIXEDk 8,15
+PAL 0
+
+ROOM FIXED1q
+0,1c,1c,1c,1c,1c,1c,1c,1c,1c,1c,1c,1c,1c,1c,0
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,14,16,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,1e,1f,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,1e,1f,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,12,17,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+1f,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1e
+0,1d,1d,1d,1d,1d,1d,1d,s,1d,1d,1d,1d,1d,1d,0
+NAME Red Room
+EXT 8,14 FIXEDk 8,0
+PAL 0
+
 TIL 10
 11111111
 00000000
@@ -1345,7 +1483,6 @@ TIL k
 00000000
 00000000
 NAME room2
-WAL false
 
 TIL l
 00000000
@@ -1391,7 +1528,6 @@ TIL o
 00111100
 00011000
 NAME room 4 heart filled
-WAL false
 
 TIL p
 00000000
@@ -1696,6 +1832,28 @@ TIL 1n
 NAME white wall fill
 WAL true
 
+TIL 1o
+10000001
+10000001
+11111111
+11111111
+10101011
+11010101
+10101011
+11111111
+NAME bottom right of computer
+
+TIL 1p
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+10000001
+10000001
+NAME top of computer
+
 SPR 10
 00000000
 00111110
@@ -1780,6 +1938,80 @@ SPR 14
 00100100
 NAME Optician
 POS 1r 9,4
+
+SPR 15
+01111100
+01101100
+01000100
+01101100
+01111100
+01010100
+01111100
+00111000
+NAME doctor T
+DLG 1k
+POS FIXED1q 8,2
+
+SPR 16
+01111100
+01101100
+11000110
+01101100
+01111100
+00101000
+00101000
+00000000
+>
+01111100
+11101110
+01000100
+01101100
+01111100
+00101000
+00101000
+00000000
+NAME Doctor B
+DLG 1j
+POS FIXED1q 8,3
+
+SPR 17
+00011000
+00011000
+00111100
+01101110
+01000110
+01101110
+01111110
+01111110
+NAME Flask1
+DLG 1c
+POS FIXED1q 12,3
+
+SPR 18
+00011000
+00011000
+00111100
+01101110
+01000110
+01101110
+01111110
+01111110
+NAME Flask2
+DLG 1d
+POS FIXED1q 2,3
+
+SPR 19
+00011000
+00011000
+00111100
+01110110
+01100010
+01110110
+01111110
+01111110
+NAME Flask3
+DLG 1e
+POS FIXED1q 3,5
 
 SPR A
 00000000
@@ -2147,6 +2379,91 @@ NAME #4-1
 DLG 10
 POS 4 2,2
 
+SPR FIXED13
+01111110
+01000010
+01000010
+01000110
+01000010
+01000010
+01000010
+01111110
+NAME Blue/Green Door
+DLG FIXED1b
+POS FIXEDk 0,10
+
+SPR FIXEDA
+00000000
+00011000
+00011000
+00100100
+01011010
+00011000
+00000100
+00100100
+>
+00000000
+00011000
+00011000
+00100100
+01011010
+00011000
+00100000
+00100100
+POS FIXED1q 7,7
+
+SPR 1a
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+10000001
+10000001
+NAME Top of Computer
+DLG 1f
+POS FIXED1q 2,10
+
+SPR 1b
+10000001
+10000001
+11111111
+10101011
+11010101
+10101011
+11010101
+11111111
+NAME Bottom of computer
+DLG 1g
+POS FIXED1q 2,11
+
+SPR 1c
+11111111
+10000001
+10111101
+10111101
+10000001
+10000001
+10000001
+10000001
+NAME bed top
+DLG 1h
+POS FIXED1q 12,9
+
+SPR 1d
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+11111111
+NAME Bed Bottom
+DLG 1i
+POS FIXED1q 12,10
+
 ITM 0
 00000000
 00000000
@@ -2262,6 +2579,29 @@ ITM 8
 00011000
 NAME red key
 
+ITM 9
+00000000
+00111100
+00100100
+00111100
+00010000
+00011000
+00010000
+00011000
+NAME blue key
+
+ITM FIXED0
+00000000
+00000000
+11101110
+10101010
+10111010
+10101010
+11101110
+00000000
+NAME glasses
+DLG 1
+
 DLG 0
 """
 {
@@ -2283,7 +2623,6 @@ It's dark...
 NAME tea dialog
 
 DLG 2
-
 NAME key dialog
 
 DLG 3
@@ -2338,7 +2677,6 @@ Where could that last heart be...
 NAME #4-2 dialog
 
 DLG 12
-
 NAME sprite 11 dialog
 
 DLG 13
@@ -2584,6 +2922,106 @@ DLG 1b
 """
 NAME Blue/Green Door locked dialog
 
+DLG FIXED1b
+"""
+{
+  - greenKey == 1 ?
+    {
+      - blueKey == 1 ?download game
+import game from html file:
+upload game
+
+
+        Perfect these two fit!{exit "1r" 15 10}
+      - else ?
+        Well one of the keys I have fits... I guess I need to find the other one.
+    }
+  - else ?
+    This door has two keyholes, better start looking.
+}
+"""
+NAME Blue/Green Door locked dialog
+
+DLG 1c
+"""
+{
+  - talkedToFlask >= 1 ?
+    Why does the doctor have so many flasks? Are they ALL filled with medicine?
+  - else ?
+    A flask? I wonder if there is medicine inside....{talkedToFlask = talkedToFlask + 1}
+}
+"""
+NAME Flask dialog
+
+DLG 1d
+Wow this flask reeks...Is that vodka?{talkedToFlask = talkedToFlask + 1}
+NAME Flask2 dialog
+
+DLG 1e
+"""
+{
+  - talkedToFlask >= 1 ?
+    Why does the doctor have so many flasks? Are they ALL filled with medicine?
+  - else ?
+    A flask? I wonder if there is medicine inside....{talkedToFlask = talkedToFlask + 1}
+}
+"""
+NAME sprite 19 dialog
+
+DLG 1f
+"""
+{shuffle
+  - I wonder what is on this computer...patient's records?
+  - I wonder if I can order food on here...
+  - I wonder if I can sell this for a pretty penny
+}
+"""
+NAME Top of Computer dialog
+
+DLG 1g
+"""
+{shuffle
+  - I wonder what is on this computer...patient's records?
+  - I wonder if I can order food on here...
+  - I wonder if I can sell this for a pretty penny
+}
+"""
+NAME Bottom of computer dialog
+
+DLG 1h
+Wow, a bed! I wonder if he lives here...
+NAME bed top dialog
+
+DLG 1i
+Wow, a bed! I wonder if he lives here...
+NAME Bed Bottom dialog
+
+DLG 1j
+"""
+Thank you so much for letting me out! I've been trapped in here for a while. I lost my key and no one has even come looking for me! I think a cat must've eaten it or something. Anyway, since I have you here, how about I give you a free check up? 
+...
+
+You say that someone gave you a red key but the color looked the same as everything else around you? That is interesting. Let me run some tests.
+
+...
+
+Okay. Here are some glasses that should help with that. Take these glasses and go out the door that has three locks. Don't put them on until you go through that door, okay? Oh, wait. I almost forgot. You're going to need this key. Here is a blue key.{printItem "9"} I know you can't tell yet but you'll see what I mean when you put on the glasses. I have no use for this key since it doesn't open the door to my room...{item "0" {1}}{item "9" 1}
+"""
+NAME Doctor B dialog
+
+DLG 1k
+"""
+Thank you so much for letting me out! I've been trapped in here for a while. I lost my key and no one has even come looking for me! I think a cat must've eaten it or something. Anyway, since I have you here, how about I give you a free check up? 
+...
+
+You say that someone gave you a red key but the color looked the same as everything else around you? That is interesting. Let me run some tests.
+
+...
+
+Okay. Here are some glasses that should help with that. Take these glasses and go out the door that has three locks. Don't put them on until you go through that door, okay? Oh, wait. I almost forgot. You're going to need this key. Here is a blue key.{printItem "9"} I know you can't tell yet but you'll see what I mean when you put on the glasses. I have no use for this key since it doesn't open the door to my room...{item "0" {1}}{item "9" 1}
+"""
+NAME doctor T dialog
+
 VAR hasTalkedToCat
 0
 
@@ -2596,3 +3034,5 @@ VAR greenKey
 VAR doorUnlocked
 0
 
+VAR talkedToFlask
+0
